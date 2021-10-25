@@ -6,7 +6,7 @@ local activeSounds = {}
 
 Citizen.CreateThread(function()
     while true do
-        Citizen.Wait(0)
+        Citizen.Wait(10)
  
         if next(activeSounds) then
             local playerCoordinates = GetEntityCoords(PlayerPedId())
